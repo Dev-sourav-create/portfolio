@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #19181a;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #19181a;
+    --foreground: #fefeff;
   }
 }
 
@@ -23,4 +23,19 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.spotlight-bg {
+  background: radial-gradient(
+    290px circle at var(--x) var(--y),
+    rgba(59, 130, 246, 0.18),
+    transparent 60%
+  );
+
+  /* smooth dimming */
+
+  transform: scale(1.2);
+  transition:
+    opacity 0.25s ease,
+    transform 0.35s ease;
 }
