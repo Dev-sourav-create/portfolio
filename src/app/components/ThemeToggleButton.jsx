@@ -63,16 +63,16 @@ export default function ThemeToggle() {
             key="moon"
             initial={{ scale: 0.5, opacity: 0, rotate: -90 }}
             animate={{ scale: 1, opacity: 1, rotate: 0 }}
-            exit={{ scale: 0.5, opacity: 0, rotate: 180 }}
+            exit={{ scale: 0.5, opacity: 0, rotate: 90 }}
           >
             <Moon size={18} />
           </motion.div>
         ) : (
           <motion.div
             key="sun"
-            initial={{ scale: 0.5, opacity: 0, rotate: 90 }}
+            initial={{ scale: 0.5, opacity: 0, rotate: -90 }}
             animate={{ scale: 1, opacity: 1, rotate: 0 }}
-            exit={{ scale: 0.5, opacity: 0, rotate: -190 }}
+            exit={{ scale: 0.5, opacity: 0, rotate: 90 }}
           >
             <Sun size={18} />
           </motion.div>
