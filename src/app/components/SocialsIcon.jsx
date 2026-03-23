@@ -2,10 +2,11 @@ import React from "react";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 const SocialsIcon = () => {
   return (
-    <div className="flex gap-6 mt-4 font-medium">
+    <div className="flex gap-4 mt-4 font-medium">
       <div className="relative group w-fit">
         <Github
           strokeWidth={1.5}
+          size={22}
           className="text-gray-400 hover:text-gray-800 hover:scale-110 transition-all duration-300 cursor-pointer"
         />
 
@@ -23,6 +24,7 @@ const SocialsIcon = () => {
       </div>
       <div className="relative group w-fit">
         <Linkedin
+          size={22}
           strokeWidth={1.5}
           className="text-gray-400 hover:text-gray-800 hover:scale-110 transition-all duration-300 cursor-pointer"
         />
@@ -41,6 +43,7 @@ const SocialsIcon = () => {
       </div>
       <div className="relative group w-fit">
         <Twitter
+          size={22}
           strokeWidth={1.5}
           className="text-gray-400 hover:text-gray-800 hover:scale-110 transition-all duration-300 cursor-pointer"
         />
@@ -59,6 +62,7 @@ const SocialsIcon = () => {
       </div>
       <div className="relative group w-fit">
         <Mail
+          size={22}
           strokeWidth={1.5}
           className="text-gray-400 hover:text-gray-800 hover:scale-110 transition-all duration-300 cursor-pointer"
         />
